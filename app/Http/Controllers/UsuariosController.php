@@ -54,7 +54,6 @@ class UsuariosController extends Controller
                     unset($consulta[0]->senha);
 
                     session()->put('usuario', $consulta[0]);
-
                     return redirect()->route('home');
                 }
             }
